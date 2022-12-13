@@ -1,0 +1,9 @@
+
+.result.perfect {
+  font-size: 2rem;
+}
+div#results {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+}

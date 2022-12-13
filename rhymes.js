@@ -1,5 +1,12 @@
 // Tessa Adams rhymes.js
 
+// write function that searches the rhyme API given a (string) query (likely you should use the fetch API)
+
+// write function that:
+//  1. expects array of word object results 
+//    that look like the spec says https://rhymebrain.com/api.html#rhyme
+//  2. creates DOM elements and inserts them into the page
+
 // get relevant dom elements
 const queryInputElem = document.getElementById('query');
 
@@ -48,13 +55,7 @@ queryInputElem.addEventListener('keyup', async function(ev) {
     });
     resultsContainer.append(...rhymeResultsElems);  
     sizeTheWords();  
+    queryInputElem.value = '';
   }   
 });
 
-
-// write function that searches the rhyme API given a (string) query (likely you should use the fetch API)
-
-// write function that:
-//  1. expects array of word object results 
-//    that look like the spec says https://rhymebrain.com/api.html#rhyme
-//  2. creates DOM elements and inserts them into the page
